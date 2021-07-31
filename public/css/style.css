@@ -1,0 +1,55 @@
+body {
+    color : green;
+    width: 650 px;  /* width of content*/
+    margin-left: 110px ;     /* arrange above 650 px accordingly*/
+    padding:  0 16px;
+
+    display: flex;    /*setting up flex box , since we have toapply to an div which is in the body , standard procedure*/
+    flex-direction: column;  /* default value is row , so the content would appear left to right , we want in column*/
+    min-height: 100vh;  /*100 % of viewport height, basically entire screen */
+}
+
+
+.main_content{
+    flex-grow: 1 ;   /*the main content shoudl take all left over space , hence the footer will be seen at the bottom*/
+}
+
+footer{
+    color : lightblue;
+    border-top: 1px solid gray;
+    margin-top: 16px;
+    padding : 16px 0;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size:  64px;
+    margin-bottom: 16px;
+}
+
+header a{
+    color : darkolivegreen;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.potrait{
+    width : 256px;
+}
+
+input{
+    border : 1px, solid, #cccccc;
+    padding : 8px
+}
+
+button{
+    cursor: pointer;
+    border : 1px solid #888888;
+    background: #888888;
+    color : white;
+    padding: 8px; 
+}

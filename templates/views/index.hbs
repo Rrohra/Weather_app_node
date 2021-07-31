@@ -1,0 +1,41 @@
+<!--root file-->
+
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "css/style.css">
+        
+    </head>
+
+    <body>
+        <div class="main_content">    <!-- we are creating this , tpo use flex box to make the footer look sticky -->
+            {{>header}}
+            <p>
+                <!--{{title}}  <! accessing the rendered content in hbs--> <!-- one value in brackets only -->
+                This is the weather App index page
+            </p>
+            <form>
+                <input placeholder="Enter the Location">
+                <button >
+                    Search
+                </button>
+            </form>
+
+            <p id="message-1">
+
+            </p>
+            <p id="message-2">
+                
+            </p>
+
+            <p id="message-3">
+
+            </p>
+        </div>
+
+        {{>footer}}
+        
+    
+        <script src="js/sample_js.js"></script>
+    </body>
+</html>
