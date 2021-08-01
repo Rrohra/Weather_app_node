@@ -56,7 +56,7 @@ weather_form.addEventListener('submit', (eventobject)=>{
 
 
     //fetch("http://localhost:3000/weather?address="+location  ).then((response)=>{        //if not heroku , if heroku use below line
-    fetch("/weather?address="+location  ).then((response)=>{  //migrating above commented fetch call in the submit event
+    fetch('/weather?address='+location  ).then((response)=>{  //migrating above commented fetch call in the submit event
         
         response.json().then((data)=>{
             
