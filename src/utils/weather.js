@@ -45,7 +45,7 @@ const weather = ({latitude, longitude}, callback)=>{                 //idhar cal
             callback("unable to find the latitide/ longitude")
         }
         else{
-         callback(undefined, {weather_condition : body.current.weather_descriptions[0],temp: body.current.temperature ,percent_of_rain : body.current.precip*10 })
+         callback(undefined, {wind_speed : body.current.wind_speed , observation_time: body.current.observation_time, weather_condition : body.current.weather_descriptions[0],temp: body.current.temperature ,percent_of_rain : body.current.precip*100 })
         }
     })
     

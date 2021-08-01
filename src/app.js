@@ -64,7 +64,7 @@ app.get('/weather',(req,res)=>{
                 else{
                     res.send({
                         "temperature_current": data1.temp,
-                        "forecast" : "The weather is "+data1.weather_condition +" .The current temperature is "+data1.temp +" and the possibility of rain is "+data1.percent_of_rain +" %",
+                        "forecast" : "This data observed was last recorded at : "+data1.observation_time+". The weather is "+data1.weather_condition +" .The current temperature is "+data1.temp +" and the possibility of rain is "+data1.percent_of_rain +" %. Wind speed is measured as "+ data1.wind_speed+" km/hr.",
                         "place" : data.place
                     })
                 }
