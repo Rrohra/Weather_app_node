@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs') //used for partials 
-const geocode = require('../../APP2_Weather/utils/geocode')
+const geocode = require('./utils/geocode')
 const weather = require('./utils/weather')
 
 //console.log(__dirname)
