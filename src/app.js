@@ -10,6 +10,9 @@ const weather = require('./utils/weather')
 
 const app = express()                         //express is basically just a function, we use it to initialise our app
 
+const port = process.env.PORT  || 3000                      //heroku setup  
+
+
 //Define paths for Express config
 const publicDirectorypath = path.join(__dirname,'../public') //create a reference to public directory
 const viewPaths = path.join(__dirname, '../templates/views')       //express expects default handlebars in views folder , we are modifying the name hence need to set the path
@@ -91,8 +94,8 @@ app.get('*', (req, res)=>{
 //asynchronous
 //callback function included
 
-app.listen(3000, ()=>{
-    console.log('server is up and running')
+app.listen(port, ()=>{                                                            //port because of heroku , nahi toh 3000 dalo
+    console.log('server is up and running '+ port)
 })
 //this method is called to send back on a particular route when a req comes from that route
 /*
