@@ -39,7 +39,7 @@ app.get('', (req,res) =>{                                  //route for index.hbs
 
 app.get('/about', (req, res)=>{                              //route for about.hbs
     res.render('about', {
-        title : "about",
+        title : "About",
         name : "rohit"
     })
 })
@@ -76,7 +76,7 @@ app.get('/weather',(req,res)=>{
 
 app.get('/help', (req, res)=>{
     res.render('help', {
-        title : "help",
+        title : "Help",
         name : "rohit"
     })
 })
